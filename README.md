@@ -4,6 +4,9 @@
 </picture>
 
 <p align="center">
+  <a href="https://www.linkedin.com/in/amin-mohammadi-870305447/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:a2m33business@gmail.com"><img src="https://img.shields.io/badge/Email-a2m33business%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+  <br>
   <img src="https://komarev.com/ghpvc/?username=A2M33&label=Profile%20views&color=3fb950&style=flat" alt="Profile views">
 </p>
 
