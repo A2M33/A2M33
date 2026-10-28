@@ -26,7 +26,7 @@ I commit as I learn, so the history in these repos shows my actual progress.
 
 ### Currently building
 
-- **deskpal**: an ESP32 desk display with clock, weather, room climate and my GitHub activity, runnable in the Wokwi simulator
+- **[deskpal](https://github.com/A2M33/deskpal)**: an ESP32 desk display with clock, weather, room climate and my GitHub activity. The firmware builds; next up is a recorded run in the Wokwi simulator
 
 ### Skills
 
