@@ -22,9 +22,9 @@ I commit as I learn, so the history in these repos shows my actual progress.
     <th>Next up</th>
   </tr>
   <tr>
-    <td valign="top"><img src="https://skillicons.dev/icons?i=python,linux,ubuntu,bash,git,github,vscode&perline=4" alt="Python, Linux, Ubuntu, Bash, Git, GitHub, VS Code"></td>
-    <td valign="top"><img src="https://skillicons.dev/icons?i=opencv,pytorch,sklearn,arduino,raspberrypi,c,cpp&perline=4" alt="OpenCV, PyTorch, scikit-learn, Arduino, Raspberry Pi, C, C++"></td>
-    <td valign="top"><img src="https://skillicons.dev/icons?i=tensorflow,docker,threejs,blender,unity,js,html,css&perline=4" alt="TensorFlow, Docker, Three.js, Blender, Unity, JavaScript, HTML, CSS"></td>
+    <td valign="top"><img src="https://skillicons.dev/icons?i=python,linux,ubuntu,bash,git,github,vscode&perline=4" width="160" alt="Python, Linux, Ubuntu, Bash, Git, GitHub, VS Code"></td>
+    <td valign="top"><img src="https://skillicons.dev/icons?i=opencv,pytorch,sklearn,arduino,raspberrypi,c,cpp&perline=4" width="160" alt="OpenCV, PyTorch, scikit-learn, Arduino, Raspberry Pi, C, C++"></td>
+    <td valign="top"><img src="https://skillicons.dev/icons?i=tensorflow,docker,threejs,blender,unity,js,html,css&perline=4" width="160" alt="TensorFlow, Docker, Three.js, Blender, Unity, JavaScript, HTML, CSS"></td>
   </tr>
 </table>
 
