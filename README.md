@@ -21,6 +21,7 @@ I commit as I learn, so the history in these repos shows my actual progress.
 | Project | What it does | Built with |
 | --- | --- | --- |
 | [artikel](https://github.com/A2M33/artikel) · [try it](https://a2m33.github.io/artikel/) | Practise der, die and das with 900+ German nouns, spaced repetition and English/Persian meanings | HTML, CSS, JavaScript |
+| [spacetrail](https://github.com/A2M33/spacetrail) | Daily folder-size snapshots that tell you which folders ate your disk space this week | Python, SQLite |
 | [sitright](https://github.com/A2M33/sitright) | Tray app that uses the webcam to remind you to sit up straight, blink and take breaks, fully offline | Python, MediaPipe, OpenCV |
 
 ### Currently building
