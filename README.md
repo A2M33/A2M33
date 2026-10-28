@@ -68,6 +68,10 @@ I commit as I learn, so the history in these repos shows my actual progress.
 ![Arduino IDE](https://img.shields.io/badge/Arduino%20IDE-00878F?style=for-the-badge&logo=arduino&logoColor=white)
 ![Wokwi](https://img.shields.io/badge/Wokwi-6E2BC2?style=for-the-badge)
 
+### Contact
+
+[![Email](https://img.shields.io/badge/Email-a2m33business%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:a2m33business@gmail.com)
+
 ### Über mich
 
 Ich heiße Amin und komme aus Teheran. Ich lerne Deutsch (Ziel: B2) und bereite mich auf eine Ausbildung als Fachinformatiker oder in der Automatisierungstechnik vor. Hier dokumentiere ich meine Projekte und meinen Lernfortschritt.
