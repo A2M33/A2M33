@@ -16,6 +16,17 @@ I'm from Tehran and I'm preparing for an Ausbildung in Germany, as a Fachinforma
 
 I commit as I learn, so the history in these repos shows my actual progress.
 
+### Projects
+
+| Project | What it does | Built with |
+| --- | --- | --- |
+| [artikel](https://github.com/A2M33/artikel) · [try it](https://a2m33.github.io/artikel/) | Practise der, die and das with 900+ German nouns, spaced repetition and English/Persian meanings | HTML, CSS, JavaScript |
+| [sitright](https://github.com/A2M33/sitright) | Tray app that uses the webcam to remind you to sit up straight, blink and take breaks, fully offline | Python, MediaPipe, OpenCV |
+
+### Currently building
+
+- **deskpal**: an ESP32 desk display with clock, weather, room climate and my GitHub activity, runnable in the Wokwi simulator
+
 ### Skills
 
 <table>
