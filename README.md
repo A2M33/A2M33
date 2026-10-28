@@ -11,14 +11,6 @@ I commit as I learn, so the history in these repos shows my actual progress.
 
 **Learning now:** Python, Linux, Git, networking, ESP32, German
 
-### Projects
-
-| Project | What it does | Status |
-| --- | --- | --- |
-| Linux automation toolkit | Python tools for system monitoring, backups and logs | planned |
-| ESP32 sensor node | Reads sensors, sends data over Wi-Fi, shows it on a dashboard | planned |
-| PLC / Modbus simulation | Simulates a small industrial process with OpenPLC and Python | planned |
-
 ### Toolbox
 
 <img src="https://skillicons.dev/icons?i=python,linux,bash,git,arduino,raspberrypi,vscode" alt="Python, Linux, Bash, Git, Arduino, Raspberry Pi, VS Code">
