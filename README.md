@@ -22,9 +22,37 @@ I commit as I learn, so the history in these repos shows my actual progress.
     <th>Next up</th>
   </tr>
   <tr>
-    <td valign="top"><img src="https://skillicons.dev/icons?i=python,linux,ubuntu,bash,git,github,vscode&perline=4" width="160" alt="Python, Linux, Ubuntu, Bash, Git, GitHub, VS Code"></td>
-    <td valign="top"><img src="https://skillicons.dev/icons?i=opencv,pytorch,sklearn,arduino,raspberrypi,c,cpp&perline=4" width="160" alt="OpenCV, PyTorch, scikit-learn, Arduino, Raspberry Pi, C, C++"></td>
-    <td valign="top"><img src="https://skillicons.dev/icons?i=tensorflow,docker,threejs,blender,unity,js,html,css&perline=4" width="160" alt="TensorFlow, Docker, Three.js, Blender, Unity, JavaScript, HTML, CSS"></td>
+    <td valign="top">
+      <img src="https://skillicons.dev/icons?i=python" width="36" title="Python" alt="Python">
+      <img src="https://skillicons.dev/icons?i=linux" width="36" title="Linux" alt="Linux">
+      <img src="https://skillicons.dev/icons?i=ubuntu" width="36" title="Ubuntu" alt="Ubuntu">
+      <img src="https://skillicons.dev/icons?i=bash" width="36" title="Bash" alt="Bash">
+      <br>
+      <img src="https://skillicons.dev/icons?i=git" width="36" title="Git" alt="Git">
+      <img src="https://skillicons.dev/icons?i=github" width="36" title="GitHub" alt="GitHub">
+      <img src="https://skillicons.dev/icons?i=vscode" width="36" title="VS Code" alt="VS Code">
+    </td>
+    <td valign="top">
+      <img src="https://skillicons.dev/icons?i=opencv" width="36" title="OpenCV" alt="OpenCV">
+      <img src="https://skillicons.dev/icons?i=pytorch" width="36" title="PyTorch" alt="PyTorch">
+      <img src="https://skillicons.dev/icons?i=sklearn" width="36" title="scikit-learn" alt="scikit-learn">
+      <img src="https://skillicons.dev/icons?i=arduino" width="36" title="Arduino" alt="Arduino">
+      <br>
+      <img src="https://skillicons.dev/icons?i=raspberrypi" width="36" title="Raspberry Pi" alt="Raspberry Pi">
+      <img src="https://skillicons.dev/icons?i=c" width="36" title="C" alt="C">
+      <img src="https://skillicons.dev/icons?i=cpp" width="36" title="C++" alt="C++">
+    </td>
+    <td valign="top">
+      <img src="https://skillicons.dev/icons?i=tensorflow" width="36" title="TensorFlow" alt="TensorFlow">
+      <img src="https://skillicons.dev/icons?i=docker" width="36" title="Docker" alt="Docker">
+      <img src="https://skillicons.dev/icons?i=threejs" width="36" title="Three.js" alt="Three.js">
+      <img src="https://skillicons.dev/icons?i=blender" width="36" title="Blender" alt="Blender">
+      <br>
+      <img src="https://skillicons.dev/icons?i=unity" width="36" title="Unity" alt="Unity">
+      <img src="https://skillicons.dev/icons?i=js" width="36" title="JavaScript" alt="JavaScript">
+      <img src="https://skillicons.dev/icons?i=html" width="36" title="HTML" alt="HTML">
+      <img src="https://skillicons.dev/icons?i=css" width="36" title="CSS" alt="CSS">
+    </td>
   </tr>
 </table>
 
