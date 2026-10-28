@@ -64,7 +64,6 @@ I commit as I learn, so the history in these repos shows my actual progress.
 
 ### Tools I like
 
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Arduino IDE](https://img.shields.io/badge/Arduino%20IDE-00878F?style=for-the-badge&logo=arduino&logoColor=white)
 ![Wokwi](https://img.shields.io/badge/Wokwi-6E2BC2?style=for-the-badge)
