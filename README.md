@@ -1,4 +1,4 @@
-﻿<picture>
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
   <img alt="Amin: Python, AI, Linux, ESP32, Automation" src="assets/header-light.svg" width="100%">
 </picture>
