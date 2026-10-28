@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img alt="Amin: Python, AI, Linux, ESP32, Automation" src="assets/header-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-v2-dark.svg">
+  <img alt="Amin: Python, AI, Linux, ESP32, Automation" src="assets/header-v2-light.svg" width="100%">
 </picture>
 
 ### Hi, I'm Amin

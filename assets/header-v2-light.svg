@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-label="Amin: Python, AI and computer vision, Linux, ESP32, Automation">
+  <rect width="900" height="220" rx="14" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="899" height="219" rx="14" fill="none" stroke="#d0d7de"/>
+  <g font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace">
+    <text x="56" y="56" font-size="15" fill="#1a7f37">$ whoami</text>
+    <text x="56" y="118" font-size="58" font-weight="700" fill="#1f2328" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">Amin</text>
+    <g font-size="14" text-anchor="middle">
+      <rect x="56" y="146" width="82" height="30" rx="15" fill="#f6f8fa" stroke="#d0d7de"/>
+      <text x="97" y="166" fill="#1f2328">Python</text>
+      <rect x="148" y="146" width="127" height="30" rx="15" fill="#dafbe1" stroke="#1a7f37"/>
+      <text x="211.5" y="166" fill="#1a7f37">AI &amp; Vision</text>
+      <rect x="285" y="146" width="73" height="30" rx="15" fill="#f6f8fa" stroke="#d0d7de"/>
+      <text x="321.5" y="166" fill="#1f2328">Linux</text>
+      <rect x="368" y="146" width="73" height="30" rx="15" fill="#f6f8fa" stroke="#d0d7de"/>
+      <text x="404.5" y="166" fill="#1f2328">ESP32</text>
+      <rect x="451" y="146" width="118" height="30" rx="15" fill="#f6f8fa" stroke="#d0d7de"/>
+      <text x="510" y="166" fill="#1f2328">Automation</text>
+    </g>
+    <text x="844" y="196" font-size="13" fill="#818b98" text-anchor="end">Iran → Germany</text>
+  </g>
+  <g fill="none" stroke="#d0d7de" stroke-width="1.5">
+    <path d="M640 60 h60 v40 h50"/>
+    <path d="M640 100 h30 v40 h80"/>
+    <path d="M750 100 v-40 h60"/>
+  </g>
+  <g fill="#1a7f37">
+    <circle cx="640" cy="60" r="4"/>
+    <circle cx="640" cy="100" r="4"/>
+    <circle cx="750" cy="100" r="4"/>
+    <circle cx="810" cy="60" r="4"/>
+    <circle cx="750" cy="140" r="4"/>
+  </g>
+</svg>
