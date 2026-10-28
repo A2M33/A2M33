@@ -4,8 +4,8 @@
   <g font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace">
     <text x="56" y="62" font-size="15" fill="#1a7f37">$ whoami</text>
     <text x="56" y="128" font-size="58" font-weight="700" fill="#1f2328" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">Amin</text>
-    <text x="56" y="168" font-size="18" fill="#59636e">Python Â· Linux Â· ESP32 Â· Automation</text>
-    <text x="844" y="190" font-size="13" fill="#818b98" text-anchor="end">Iran â†’ Germany</text>
+    <text x="56" y="168" font-size="18" fill="#59636e">Python · AI · Linux · ESP32 · Automation</text>
+    <text x="844" y="190" font-size="13" fill="#818b98" text-anchor="end">Iran → Germany</text>
   </g>
   <g fill="none" stroke="#d0d7de" stroke-width="1.5">
     <path d="M620 70 h60 v40 h50"/>

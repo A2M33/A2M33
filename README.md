@@ -25,6 +25,6 @@ I commit as I learn, so the history in these repos shows my actual progress.
 **3D & web**<br>
 <img src="https://skillicons.dev/icons?i=threejs,blender,unity,js,html,css" alt="Three.js, Blender, Unity, JavaScript, HTML, CSS">
 
-### Ãœber mich
+### Über mich
 
-Ich heiÃŸe Amin und komme aus dem Iran. Ich lerne Deutsch (Ziel: B2) und bereite mich auf eine Ausbildung als Fachinformatiker oder in der Automatisierungstechnik vor. Hier dokumentiere ich meine Projekte und meinen Lernfortschritt.
+Ich heiße Amin und komme aus dem Iran. Ich lerne Deutsch (Ziel: B2) und bereite mich auf eine Ausbildung als Fachinformatiker oder in der Automatisierungstechnik vor. Hier dokumentiere ich meine Projekte und meinen Lernfortschritt.
