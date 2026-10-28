@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-label="Amin: Python, Linux, ESP32, Automation">
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-label="Amin: Python, AI, Linux, ESP32, Automation">
   <rect width="900" height="220" rx="14" fill="#0d1117"/>
   <rect x="0.5" y="0.5" width="899" height="219" rx="14" fill="none" stroke="#30363d"/>
   <g font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace">
     <text x="56" y="62" font-size="15" fill="#3fb950">$ whoami</text>
     <text x="56" y="128" font-size="58" font-weight="700" fill="#e6edf3" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">Amin</text>
-    <text x="56" y="168" font-size="18" fill="#8b949e">Python · Linux · ESP32 · Automation</text>
-    <text x="844" y="190" font-size="13" fill="#6e7681" text-anchor="end">Iran → Germany</text>
+    <text x="56" y="168" font-size="18" fill="#8b949e">Python Â· Linux Â· ESP32 Â· Automation</text>
+    <text x="844" y="190" font-size="13" fill="#6e7681" text-anchor="end">Iran â†’ Germany</text>
   </g>
   <g fill="none" stroke="#30363d" stroke-width="1.5">
     <path d="M620 70 h60 v40 h50"/>
