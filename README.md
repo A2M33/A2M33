@@ -23,11 +23,13 @@ I build small tools people can use and commit as I go, so the history in each re
 | [artikel](https://github.com/A2M33/artikel) · [try it](https://a2m33.github.io/artikel/) | Practise der, die and das with 900+ German nouns, spaced repetition and English/Persian meanings | HTML, CSS, JavaScript |
 | [practicemeter](https://github.com/A2M33/practicemeter) · [try it](https://a2m33.github.io/practicemeter/) | Practice timer for musicians that counts only the minutes you play, using the microphone in the browser | JavaScript, Web Audio |
 | [spacetrail](https://github.com/A2M33/spacetrail) | Daily folder-size snapshots that tell you which folders ate your disk space this week | Python, SQLite |
+| [deskpal](https://github.com/A2M33/deskpal) | ESP32 desk display with clock, weather, room climate and my GitHub contribution grid on a 128x64 OLED | C++, Arduino, ESP32 |
 | [sitright](https://github.com/A2M33/sitright) | Tray app that watches your posture through the webcam and reminds you to sit up, blink and take breaks; runs offline | Python, MediaPipe, OpenCV |
 
 ### Currently building
 
-- **[deskpal](https://github.com/A2M33/deskpal)**: an ESP32 desk display with clock, weather, room climate and my GitHub activity. The firmware compiles in CI; next I'm recording a run in the Wokwi simulator.
+- Recording deskpal running in the Wokwi simulator
+- A demo GIF for sitright
 
 ### Skills
 
