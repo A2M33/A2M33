@@ -12,22 +12,22 @@
 
 ### Hi, I'm Amin 👋
 
-I'm from Tehran and I'm preparing for an Ausbildung in Germany, as a Fachinformatiker or in industrial automation. I like the point where software meets hardware: Python on Linux, sensors on an ESP32, and AI that reacts to the real world through a camera.
+I'm from Tehran and I'm preparing for an Ausbildung in Germany, as a Fachinformatiker or in industrial automation. I like projects where code touches the physical world, like a webcam that notices you slouching or the ESP32 desk display I'm building now.
 
-I commit as I learn, so the history in these repos shows my actual progress.
+I build small tools people can use and commit as I go, so the history in each repo shows how it came together.
 
 ### Projects
 
 | Project | What it does | Built with |
 | --- | --- | --- |
 | [artikel](https://github.com/A2M33/artikel) · [try it](https://a2m33.github.io/artikel/) | Practise der, die and das with 900+ German nouns, spaced repetition and English/Persian meanings | HTML, CSS, JavaScript |
-| [practicemeter](https://github.com/A2M33/practicemeter) · [try it](https://a2m33.github.io/practicemeter/) | Practice timer for musicians that only counts while you're actually playing, using the microphone in the browser | JavaScript, Web Audio |
+| [practicemeter](https://github.com/A2M33/practicemeter) · [try it](https://a2m33.github.io/practicemeter/) | Practice timer for musicians that counts only the minutes you play, using the microphone in the browser | JavaScript, Web Audio |
 | [spacetrail](https://github.com/A2M33/spacetrail) | Daily folder-size snapshots that tell you which folders ate your disk space this week | Python, SQLite |
-| [sitright](https://github.com/A2M33/sitright) | Tray app that uses the webcam to remind you to sit up straight, blink and take breaks, fully offline | Python, MediaPipe, OpenCV |
+| [sitright](https://github.com/A2M33/sitright) | Tray app that watches your posture through the webcam and reminds you to sit up, blink and take breaks; runs offline | Python, MediaPipe, OpenCV |
 
 ### Currently building
 
-- **[deskpal](https://github.com/A2M33/deskpal)**: an ESP32 desk display with clock, weather, room climate and my GitHub activity. The firmware builds; next up is a recorded run in the Wokwi simulator
+- **[deskpal](https://github.com/A2M33/deskpal)**: an ESP32 desk display with clock, weather, room climate and my GitHub activity. The firmware compiles in CI; next I'm recording a run in the Wokwi simulator.
 
 ### Skills
 
@@ -57,6 +57,10 @@ I commit as I learn, so the history in these repos shows my actual progress.
       <img src="https://skillicons.dev/icons?i=raspberrypi" width="36" title="Raspberry Pi" alt="Raspberry Pi">
       <img src="https://skillicons.dev/icons?i=c" width="36" title="C" alt="C">
       <img src="https://skillicons.dev/icons?i=cpp" width="36" title="C++" alt="C++">
+      <br>
+      <img src="https://skillicons.dev/icons?i=js" width="36" title="JavaScript" alt="JavaScript">
+      <img src="https://skillicons.dev/icons?i=html" width="36" title="HTML" alt="HTML">
+      <img src="https://skillicons.dev/icons?i=css" width="36" title="CSS" alt="CSS">
     </td>
     <td valign="top">
       <img src="https://skillicons.dev/icons?i=tensorflow" width="36" title="TensorFlow" alt="TensorFlow">
@@ -65,9 +69,6 @@ I commit as I learn, so the history in these repos shows my actual progress.
       <img src="https://skillicons.dev/icons?i=blender" width="36" title="Blender" alt="Blender">
       <br>
       <img src="https://skillicons.dev/icons?i=unity" width="36" title="Unity" alt="Unity">
-      <img src="https://skillicons.dev/icons?i=js" width="36" title="JavaScript" alt="JavaScript">
-      <img src="https://skillicons.dev/icons?i=html" width="36" title="HTML" alt="HTML">
-      <img src="https://skillicons.dev/icons?i=css" width="36" title="CSS" alt="CSS">
     </td>
   </tr>
 </table>
@@ -84,12 +85,6 @@ I commit as I learn, so the history in these repos shows my actual progress.
 ![Arduino IDE](https://img.shields.io/badge/Arduino%20IDE-00878F?style=for-the-badge&logo=arduino&logoColor=white)
 ![Wokwi](https://img.shields.io/badge/Wokwi-6E2BC2?style=for-the-badge)
 
-### Contact
-
-[![Email](https://img.shields.io/badge/Email-a2m33business%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:a2m33business@gmail.com)
-
 ### Über mich
 
 Ich heiße Amin und komme aus Teheran. Ich lerne Deutsch (Ziel: B2) und bereite mich auf eine Ausbildung als Fachinformatiker oder in der Automatisierungstechnik vor. Hier dokumentiere ich meine Projekte und meinen Lernfortschritt.
-
-<p align="center"><sub>Built in Tehran, one commit at a time. Next stop: Germany.</sub></p>
