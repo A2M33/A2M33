@@ -23,6 +23,7 @@ I build small tools people can use and commit as I go, so the history in each re
 | [artikel](https://github.com/A2M33/artikel) · [try it](https://a2m33.github.io/artikel/) | Practise der, die and das with 900+ German nouns, spaced repetition and English/Persian meanings | HTML, CSS, JavaScript |
 | [practicemeter](https://github.com/A2M33/practicemeter) · [try it](https://a2m33.github.io/practicemeter/) | Practice timer for musicians that counts only the minutes you play, using the microphone in the browser | JavaScript, Web Audio |
 | [spacetrail](https://github.com/A2M33/spacetrail) | Daily folder-size snapshots that tell you which folders ate your disk space this week | Python, SQLite |
+| [histpick](https://github.com/A2M33/histpick) | Pick commands from your shell history and save them as a script for PowerShell, bash, zsh or fish | Python |
 | [deskpal](https://github.com/A2M33/deskpal) | ESP32 desk display with clock, weather, room climate and my GitHub contribution grid on a 128x64 OLED | C++, Arduino, ESP32 |
 | [sitright](https://github.com/A2M33/sitright) | Tray app that watches your posture through the webcam and reminds you to sit up, blink and take breaks; runs offline | Python, MediaPipe, OpenCV |
 
