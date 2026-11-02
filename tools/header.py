@@ -72,7 +72,7 @@ def svg(t):
         f'<circle cx="{x}" cy="{y}" r="5" fill="{T["hole"]}" stroke="{T["border"]}"/>'
         for x, y in [(612, 52), (836, 52), (612, 196), (836, 196)]
     )
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" role="img" aria-label="Amin Mohammadi. Python, embedded and automation. Tehran to Germany, looking for an Ausbildung.">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" role="img" aria-label="Amin Mohammadi. Python, embedded and automation. Tehran, Iran.">
   <style>
     .blink {{ animation: blink 2s steps(1) infinite; }}
     .tw {{ animation: tw 6s ease-in-out infinite; }}
@@ -87,7 +87,7 @@ def svg(t):
   <g font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace">
     <text x="56" y="70" font-size="14" fill="{T["muted"]}">~/A2M33 $</text>
     <rect class="cur" x="137" y="58" width="8" height="15" fill="{T["accent"]}"/>
-    <text x="56" y="194" font-size="14" fill="{T["accent"]}">Tehran → Germany · looking for an Ausbildung</text>
+    <text x="56" y="194" font-size="14" fill="{T["accent"]}">Tehran, Iran · building tools that touch hardware</text>
   </g>
   <g font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
     <text x="54" y="126" font-size="48" font-weight="700" letter-spacing="-1" fill="{T["text"]}">Amin Mohammadi</text>

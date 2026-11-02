@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" role="img" aria-label="Amin Mohammadi. Python, embedded and automation. Tehran to Germany, looking for an Ausbildung.">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" role="img" aria-label="Amin Mohammadi. Python, embedded and automation. Tehran, Iran.">
   <style>
     .blink { animation: blink 2s steps(1) infinite; }
     .tw { animation: tw 6s ease-in-out infinite; }
@@ -13,7 +13,7 @@
   <g font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace">
     <text x="56" y="70" font-size="14" fill="#8b949e">~/A2M33 $</text>
     <rect class="cur" x="137" y="58" width="8" height="15" fill="#3fb950"/>
-    <text x="56" y="194" font-size="14" fill="#3fb950">Tehran → Germany · looking for an Ausbildung</text>
+    <text x="56" y="194" font-size="14" fill="#3fb950">Tehran, Iran · building tools that touch hardware</text>
   </g>
   <g font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
     <text x="54" y="126" font-size="48" font-weight="700" letter-spacing="-1" fill="#e6edf3">Amin Mohammadi</text>
