@@ -45,9 +45,19 @@ I like code that reaches into the physical world: a webcam that notices you slou
 
 ## Tech stack
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,cpp,js,linux,arduino,opencv,git&perline=7" alt="Python, C++, JavaScript, Linux, Arduino, OpenCV, Git">
-</p>
+<table align="center">
+  <tr>
+    <td align="right"><sub><b>Languages</b></sub></td>
+    <td><img src="https://skillicons.dev/icons?i=python,c,cpp,js,html,css,bash,powershell" height="40" alt="Python, C, C++, JavaScript, HTML, CSS, Bash, PowerShell"></td>
+  </tr>
+  <tr>
+    <td align="right"><sub><b>AI &amp; hardware</b></sub></td>
+    <td><img src="https://skillicons.dev/icons?i=opencv,pytorch,sklearn,arduino,raspberrypi" height="40" alt="OpenCV, PyTorch, scikit-learn, Arduino, Raspberry Pi"></td>
+  </tr>
+  <tr>
+    <td align="right"><sub><b>Tools</b></sub></td>
+    <td><img src="https://skillicons.dev/icons?i=linux,ubuntu,git,github,vscode,sqlite,nodejs" height="40" alt="Linux, Ubuntu, Git, GitHub, VS Code, SQLite, Node.js"></td>
+  </tr>
+</table>
 
-<p align="center">Learning now: PyTorch, scikit-learn, Raspberry Pi</p>
-<p align="center">Persian (native) · English (fluent) · Deutsch (learning)</p>
+<p align="center"><sub>Persian (native) · English (fluent) · Deutsch (learning)</sub></p>
