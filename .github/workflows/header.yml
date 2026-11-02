@@ -1,0 +1,38 @@
+name: header
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [tools/header.py, .github/workflows/header.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: header
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: python tools/header.py dist
+
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: false
+          commit_message: Update header
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

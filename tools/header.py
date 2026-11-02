@@ -1,16 +1,38 @@
-import random, sys, os
+"""Render the profile header SVGs with Tehran's current time and temperature.
+
+Usage: python tools/header.py <out-dir>
+Run by .github/workflows/header.yml every 15 minutes.
+"""
+import json, os, sys, urllib.request
+from datetime import datetime, timedelta, timezone
 
 OUT = sys.argv[1]
+# Iran dropped daylight saving in 2022, so Tehran is a fixed UTC+3:30
+TZ = timezone(timedelta(hours=3, minutes=30))
+WEATHER = ("https://api.open-meteo.com/v1/forecast?latitude=35.69&longitude=51.39"
+           "&current=temperature_2m&timezone=Asia%2FTehran")
 
+# 3x5 pixel font, like the u8g2 fonts on deskpal
 FONT = {
-    "0": ["111", "101", "101", "101", "111"],
-    "1": ["010", "110", "010", "010", "111"],
-    "2": ["111", "001", "111", "100", "111"],
-    "4": ["101", "101", "111", "001", "001"],
-    "7": ["111", "001", "001", "001", "001"],
-    ":": ["000", "010", "000", "010", "000"],
-    "o": ["11", "11", "00", "00", "00"],
-    "C": ["111", "100", "100", "100", "111"],
+    "0": ["111", "101", "101", "101", "111"], "1": ["010", "110", "010", "010", "111"],
+    "2": ["111", "001", "111", "100", "111"], "3": ["111", "001", "111", "001", "111"],
+    "4": ["101", "101", "111", "001", "001"], "5": ["111", "100", "111", "001", "111"],
+    "6": ["111", "100", "111", "101", "111"], "7": ["111", "001", "001", "001", "001"],
+    "8": ["111", "101", "111", "101", "111"], "9": ["111", "101", "111", "001", "111"],
+    "A": ["010", "101", "111", "101", "101"], "B": ["110", "101", "110", "101", "110"],
+    "C": ["111", "100", "100", "100", "111"], "D": ["110", "101", "101", "101", "110"],
+    "E": ["111", "100", "110", "100", "111"], "F": ["111", "100", "110", "100", "100"],
+    "G": ["111", "100", "101", "101", "111"], "H": ["101", "101", "111", "101", "101"],
+    "I": ["111", "010", "010", "010", "111"], "J": ["001", "001", "001", "101", "111"],
+    "K": ["101", "101", "110", "101", "101"], "L": ["100", "100", "100", "100", "111"],
+    "M": ["101", "111", "111", "101", "101"], "N": ["110", "101", "101", "101", "101"],
+    "O": ["111", "101", "101", "101", "111"], "P": ["111", "101", "111", "100", "100"],
+    "R": ["110", "101", "110", "101", "101"], "S": ["111", "100", "111", "001", "111"],
+    "T": ["111", "010", "010", "010", "010"], "U": ["101", "101", "101", "101", "111"],
+    "V": ["101", "101", "101", "101", "010"], "W": ["101", "101", "111", "111", "101"],
+    "Y": ["101", "101", "010", "010", "010"],
+    ":": ["0", "1", "0", "1", "0"], "-": ["000", "000", "111", "000", "000"],
+    " ": ["0", "0", "0", "0", "0"], "o": ["11", "11", "00", "00", "00"],
 }
 
 THEMES = {
@@ -31,37 +53,43 @@ def oled_rect(x, y, w, h, op=1.0, extra=""):
     return f'<rect x="{SX + x * U:g}" y="{SY + y * U:g}" width="{w * U:g}" height="{h * U:g}"{o}{extra}/>'
 
 
+def width(s, scale):
+    return sum((len(FONT[ch][0]) + 1) * scale for ch in s) - scale
+
+
 def text(s, x, y, scale):
     out = []
     for ch in s:
-        for r, row in enumerate(FONT[ch]):
+        glyph = FONT[ch]
+        for r, row in enumerate(glyph):
             for c, bit in enumerate(row):
                 if bit == "1":
                     cls = ' class="blink"' if ch == ":" else ""
                     out.append(oled_rect(x + c * scale, y + r * scale, scale, scale, 1.0, cls))
-        x += 4 * scale
+        x += (len(glyph[0]) + 1) * scale
     return out
 
 
-def screen_pixels():
-    px = text("14:07", 6, 5, 3)
-    px += text("22oC", 90, 7, 2)
-    px.append(oled_rect(6, 25, 116, 0.67, 0.35))
-    rng = random.Random(33)
-    cols, rows, x0, y0 = 26, 7, 12, 30
-    levels = [0.12, 0.35, 0.65, 1.0]
-    for c in range(cols):
-        for r in range(rows):
-            w = rng.random() * (0.4 + 0.6 * c / cols)
-            lvl = levels[min(3, int(w * 4.4))]
-            extra = ""
-            if rng.random() < 0.22:
-                extra = f' class="tw" style="animation-delay:{rng.random() * 6:.2f}s"'
-            px.append(oled_rect(x0 + c * 4, y0 + r * 4, 3, 3, lvl, extra))
+def temperature():
+    try:
+        with urllib.request.urlopen(WEATHER, timeout=15) as r:
+            return f"{round(json.load(r)['current']['temperature_2m'])}oC"
+    except Exception:
+        return "--oC"
+
+
+def screen_pixels(now, temp):
+    px = text("TEHRAN", 6, 4, 2)
+    px += text(temp, 122 - width(temp, 2), 4, 2)
+    px.append(oled_rect(6, 17, 116, 0.67, 0.35))
+    clock = now.strftime("%H:%M")
+    px += text(clock, (128 - width(clock, 5)) // 2, 22, 5)
+    date = now.strftime("%a %d %b").upper()
+    px += text(date, (128 - width(date, 1.5)) / 2, 54, 1.5)
     return px
 
 
-def svg(t):
+def svg(t, now, temp):
     T = THEMES[t]
     pins = "".join(
         f'<circle cx="{694 + i * 20}" cy="58" r="4" fill="{T["pin"]}"/>'
@@ -72,16 +100,15 @@ def svg(t):
         f'<circle cx="{x}" cy="{y}" r="5" fill="{T["hole"]}" stroke="{T["border"]}"/>'
         for x, y in [(612, 52), (836, 52), (612, 196), (836, 196)]
     )
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" role="img" aria-label="Amin Mohammadi. Python, embedded and automation. Tehran, Iran.">
+    label = f"Amin Mohammadi. Python, embedded and automation. Tehran, {now:%H:%M}, {temp.replace('o', '°')}."
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" role="img" aria-label="{label}">
   <style>
     .blink {{ animation: blink 2s steps(1) infinite; }}
-    .tw {{ animation: tw 6s ease-in-out infinite; }}
     .led {{ animation: led 2.4s ease-in-out infinite; }}
     .cur {{ animation: blink 1.1s steps(1) infinite; }}
     @keyframes blink {{ 50% {{ opacity: 0; }} }}
-    @keyframes tw {{ 0%, 100% {{ opacity: .12; }} 40%, 60% {{ opacity: 1; }} }}
     @keyframes led {{ 0%, 100% {{ opacity: .35; }} 50% {{ opacity: 1; }} }}
-    @media (prefers-reduced-motion: reduce) {{ .blink, .tw, .led, .cur {{ animation: none; }} }}
+    @media (prefers-reduced-motion: reduce) {{ .blink, .led, .cur {{ animation: none; }} }}
   </style>
   <rect x="0.5" y="0.5" width="899" height="239" rx="16" fill="{T["bg"]}" stroke="{T["border"]}"/>
   <g font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace">
@@ -100,12 +127,16 @@ def svg(t):
   <text x="812" y="61" font-family="ui-monospace, Consolas, monospace" font-size="8" fill="{T["muted"]}" text-anchor="end">PWR</text>
   <rect x="622" y="70" width="204" height="108" rx="3" fill="{T["screen"]}"/>
   <g fill="{T["px"]}">
-    {"".join(screen_pixels())}
+    {"".join(screen_pixels(now, temp))}
   </g>
 </svg>
 '''
 
 
+now = datetime.now(TZ)
+temp = temperature()
+os.makedirs(OUT, exist_ok=True)
 for t in THEMES:
-    with open(os.path.join(OUT, f"header-v4-{t}.svg"), "w", encoding="utf-8", newline="\n") as f:
-        f.write(svg(t))
+    with open(os.path.join(OUT, f"header-{t}.svg"), "w", encoding="utf-8", newline="\n") as f:
+        f.write(svg(t, now, temp))
+print(f"{now:%Y-%m-%d %H:%M} {temp}")
