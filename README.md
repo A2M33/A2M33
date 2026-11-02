@@ -3,9 +3,7 @@
   <img alt="Amin Mohammadi. Python, embedded and automation. Tehran to Germany, looking for an Ausbildung." src="assets/header-v3-light.svg" width="100%">
 </picture>
 
-<br>
-
-<p align="center"><samp>
+<p align="center"><br><samp>
 <a href="https://www.linkedin.com/in/amin-mohammadi-a2m33/">linkedin</a> ·
 <a href="mailto:a2m33business@gmail.com">email</a> ·
 <a href="#über-mich">deutsch</a>
