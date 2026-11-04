@@ -1,12 +1,12 @@
-"""Render the profile header SVGs with Tehran's current time and temperature.
+"""Render the profile header SVGs with Tehran's temperature and the render time.
 
 Usage: python tools/header.py <out-dir>
-Run by .github/workflows/header.yml every 15 minutes.
+Run by .github/workflows/header.yml. GitHub delays scheduled runs by hours, so
+the render time is drawn as "updated", never as a clock that looks current.
 """
 import json, os, sys, urllib.request
 from datetime import datetime, timedelta, timezone
 
-OUT = sys.argv[1]
 # Iran dropped daylight saving in 2022, so Tehran is a fixed UTC+3:30
 TZ = timezone(timedelta(hours=3, minutes=30))
 WEATHER = ("https://api.open-meteo.com/v1/forecast?latitude=35.69&longitude=51.39"
@@ -64,8 +64,7 @@ def text(s, x, y, scale):
         for r, row in enumerate(glyph):
             for c, bit in enumerate(row):
                 if bit == "1":
-                    cls = ' class="blink"' if ch == ":" else ""
-                    out.append(oled_rect(x + c * scale, y + r * scale, scale, scale, 1.0, cls))
+                    out.append(oled_rect(x + c * scale, y + r * scale, scale, scale))
         x += (len(glyph[0]) + 1) * scale
     return out
 
@@ -80,12 +79,12 @@ def temperature():
 
 def screen_pixels(now, temp):
     px = text("TEHRAN", 6, 4, 2)
-    px += text(temp, 122 - width(temp, 2), 4, 2)
-    px.append(oled_rect(6, 17, 116, 0.67, 0.35))
-    clock = now.strftime("%H:%M")
-    px += text(clock, (128 - width(clock, 5)) // 2, 22, 5)
     date = now.strftime("%a %d %b").upper()
-    px += text(date, (128 - width(date, 1.5)) / 2, 54, 1.5)
+    px += text(date, 122 - width(date, 1.5), 5, 1.5)
+    px.append(oled_rect(6, 17, 116, 0.67, 0.35))
+    px += text(temp, (128 - width(temp, 5)) // 2, 22, 5)
+    updated = now.strftime("UPDATED %H:%M")
+    px += text(updated, (128 - width(updated, 1.5)) / 2, 54, 1.5)
     return px
 
 
@@ -100,15 +99,14 @@ def svg(t, now, temp):
         f'<circle cx="{x}" cy="{y}" r="5" fill="{T["hole"]}" stroke="{T["border"]}"/>'
         for x, y in [(612, 52), (836, 52), (612, 196), (836, 196)]
     )
-    label = f"Amin Mohammadi. Python, embedded and automation. Tehran, {now:%H:%M}, {temp.replace('o', '°')}."
+    label = f"Amin Mohammadi. Python, embedded and automation. Tehran, {temp.replace('o', '°')}, updated {now:%H:%M}."
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" role="img" aria-label="{label}">
   <style>
-    .blink {{ animation: blink 2s steps(1) infinite; }}
     .led {{ animation: led 2.4s ease-in-out infinite; }}
     .cur {{ animation: blink 1.1s steps(1) infinite; }}
     @keyframes blink {{ 50% {{ opacity: 0; }} }}
     @keyframes led {{ 0%, 100% {{ opacity: .35; }} 50% {{ opacity: 1; }} }}
-    @media (prefers-reduced-motion: reduce) {{ .blink, .led, .cur {{ animation: none; }} }}
+    @media (prefers-reduced-motion: reduce) {{ .led, .cur {{ animation: none; }} }}
   </style>
   <rect x="0.5" y="0.5" width="899" height="239" rx="16" fill="{T["bg"]}" stroke="{T["border"]}"/>
   <g font-family="ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace">
@@ -133,10 +131,18 @@ def svg(t, now, temp):
 '''
 
 
-now = datetime.now(TZ)
-temp = temperature()
-os.makedirs(OUT, exist_ok=True)
-for t in THEMES:
-    with open(os.path.join(OUT, f"header-{t}.svg"), "w", encoding="utf-8", newline="\n") as f:
-        f.write(svg(t, now, temp))
-print(f"{now:%Y-%m-%d %H:%M} {temp}")
+def main():
+    if len(sys.argv) != 2:
+        sys.exit(__doc__)
+    out = sys.argv[1]
+    now = datetime.now(TZ)
+    temp = temperature()
+    os.makedirs(out, exist_ok=True)
+    for t in THEMES:
+        with open(os.path.join(out, f"header-{t}.svg"), "w", encoding="utf-8", newline="\n") as f:
+            f.write(svg(t, now, temp))
+    print(f"{now:%Y-%m-%d %H:%M} {temp}")
+
+
+if __name__ == "__main__":
+    main()

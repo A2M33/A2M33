@@ -2,7 +2,8 @@ name: header
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    # GitHub runs this every few hours at best, whatever the cron says
+    - cron: "17 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -20,15 +21,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
+      - run: python3 tools/header.py dist
 
-      - run: python tools/header.py dist
-
-      - uses: crazy-max/ghaction-github-pages@v4
+      - uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output
           build_dir: dist
