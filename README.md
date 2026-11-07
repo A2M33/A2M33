@@ -42,10 +42,10 @@ I like code that reaches into the physical world: a webcam that notices you slou
       <br><br><code>Python</code> <code>MediaPipe</code>
     </td>
     <td width="50%" valign="top">
-      <a href="https://a2m33.github.io/artikel/"><img src="assets/cards/artikel.png" alt="artikel der, die, das quiz"></a>
-      <h3><a href="https://github.com/A2M33/artikel">artikel</a></h3>
-      Der, die, das trainer with 900+ nouns and spaced repetition. <a href="https://a2m33.github.io/artikel/">Try it ↗</a>
-      <br><br><code>JavaScript</code> <code>PWA</code>
+      <a href="https://github.com/A2M33/mixinsmith"><img src="assets/cards/mixinsmith.png" alt="mixinsmith terminal: a broken Minecraft mixin crashes the server, the lookup finds the right method name, and the server boots"></a>
+      <h3><a href="https://github.com/A2M33/mixinsmith">mixinsmith</a></h3>
+      Lets coding agents look up the real Minecraft and Fabric API of a mod project, diagnose crashes and port between versions.
+      <br><br><code>Python</code> <code>Minecraft modding</code>
     </td>
   </tr>
 </table>
