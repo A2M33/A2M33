@@ -50,25 +50,7 @@ I like code that reaches into the physical world: a webcam that notices you slou
   </tr>
 </table>
 
-## All projects
-
-**Hardware & automation**
-- [tanksim](https://github.com/A2M33/tanksim): PLC-run water tank with Modbus TCP and a browser HMI
-- [deskpal](https://github.com/A2M33/deskpal): ESP32 OLED desk display, runs in Wokwi
-
-**Desktop & CLI tools**
-- [sitright](https://github.com/A2M33/sitright): webcam posture, blink and break reminders
-- [clickforge](https://github.com/A2M33/clickforge): rebindable auto clicker with a Stream Deck plugin
-- [histpick](https://github.com/A2M33/histpick): pick commands from your shell history and save them as a script
-- [spacetrail](https://github.com/A2M33/spacetrail): daily disk snapshots that show which folders grew
-
-**Web apps**
-- [artikel](https://github.com/A2M33/artikel): der, die, das trainer with spaced repetition
-- [practicemeter](https://github.com/A2M33/practicemeter): practice timer that counts only the minutes you play
-
-**Minecraft**
-- [mixinsmith](https://github.com/A2M33/mixinsmith): look up the real Minecraft, Fabric and NeoForge API for AI coding agents
-- [villagerswarm](https://github.com/A2M33/villagerswarm): Fabric mod where villagers chase you on command
+<p align="center"><a href="https://github.com/A2M33?tab=repositories">More projects →</a></p>
 
 ## Tech stack
 
