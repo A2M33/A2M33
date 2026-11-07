@@ -4,48 +4,36 @@
 </picture>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&duration=3200&pause=1400&color=2EA043&center=true&vCenter=true&width=560&height=44&lines=I+build+tools+that+touch+hardware;Python+%C2%B7+ESP32+%C2%B7+computer+vision" alt="I build tools that touch hardware. Python, ESP32, computer vision.">
-</p>
-
-<p align="center">
   <a href="https://www.linkedin.com/in/amin-mohammadi-a2m33/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:a2m33business@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
   <a href="https://x.com/A2M33_"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
 </p>
 
-I like code that reaches into the physical world: a webcam that notices you slouching, an ESP32 display on my desk, a PLC program that keeps a water tank from running dry. I build small tools people can use and commit as I go.
+I like code that reaches into the physical world: a PLC program that keeps a water tank from running dry, an ESP32 display on my desk, a webcam that notices you slouching.
 
 🎯 **Goal:** an Ausbildung in Germany as a Fachinformatiker or in Automatisierungstechnik.
 
-## Featured projects
+## Projects
 
 <table>
   <tr>
-    <td width="50%" valign="top">
+    <td width="33%" valign="top">
       <a href="https://a2m33.github.io/tanksim/"><img src="assets/cards/tanksim.png" alt="tanksim operator screen with the tank, pump P-101 in fault and the setpoint panel"></a>
       <h3><a href="https://github.com/A2M33/tanksim">tanksim</a></h3>
-      A water tank and pump run by a PLC program, with interlocks, alarms, a Modbus TCP server and an operator HMI. <a href="https://a2m33.github.io/tanksim/">Try it ↗</a>
-      <br><br><code>Python</code> <code>Modbus TCP</code> <code>PLC logic</code>
+      <sub>PLC-run water tank with alarms, Modbus TCP and an operator HMI. <a href="https://a2m33.github.io/tanksim/">Try it ↗</a></sub>
+      <br><br><code>Python</code> <code>Modbus</code>
     </td>
-    <td width="50%" valign="top">
+    <td width="33%" valign="top">
       <a href="https://github.com/A2M33/deskpal"><img src="assets/cards/deskpal.png" alt="deskpal OLED display showing the clock, weather and room climate"></a>
       <h3><a href="https://github.com/A2M33/deskpal">deskpal</a></h3>
-      ESP32 desk display with clock, weather, room climate and my GitHub grid.
+      <sub>ESP32 desk display with clock, weather, room climate and my GitHub grid.</sub>
       <br><br><code>C++</code> <code>ESP32</code>
     </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
+    <td width="33%" valign="top">
       <a href="https://github.com/A2M33/sitright"><img src="assets/cards/sitright.png" alt="sitright posture reminder"></a>
       <h3><a href="https://github.com/A2M33/sitright">sitright</a></h3>
-      Webcam posture, blink and break reminders. Runs offline.
+      <sub>Webcam posture, blink and break reminders. Runs offline.</sub>
       <br><br><code>Python</code> <code>MediaPipe</code>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/A2M33/mixinsmith"><img src="assets/cards/mixinsmith.png" alt="mixinsmith terminal: a broken Minecraft mixin crashes the server, the lookup finds the right method name, and the server boots"></a>
-      <h3><a href="https://github.com/A2M33/mixinsmith">mixinsmith</a></h3>
-      Lets coding agents look up the real Minecraft and Fabric API of a mod project, diagnose crashes and port between versions.
-      <br><br><code>Python</code> <code>Minecraft modding</code>
     </td>
   </tr>
 </table>
