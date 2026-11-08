@@ -4,33 +4,33 @@
 </picture>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/amin-mohammadi-a2m33/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:a2m33business@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://x.com/A2M33_"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
+  <a href="https://www.linkedin.com/in/amin-mohammadi-a2m33/"><img src="https://img.shields.io/badge/LinkedIn-242b27?style=flat-square&logo=linkedin&logoColor=e2e6e0" alt="LinkedIn"></a>
+  <a href="mailto:a2m33business@gmail.com"><img src="https://img.shields.io/badge/Email-242b27?style=flat-square&logo=gmail&logoColor=e2e6e0" alt="Email"></a>
+  <a href="https://x.com/A2M33_"><img src="https://img.shields.io/badge/X-242b27?style=flat-square&logo=x&logoColor=e2e6e0" alt="X"></a>
 </p>
 
 I like code that reaches into the physical world: a PLC program that keeps a water tank from running dry, an ESP32 display on my desk, a webcam that notices you slouching.
 
-🎯 **Goal:** an Ausbildung in Germany as a Fachinformatiker or in Automatisierungstechnik.
+**Goal:** an Ausbildung in Germany as a Fachinformatiker or in Automatisierungstechnik.
 
 ## Projects
 
 <table>
   <tr>
     <td width="33%" valign="top">
-      <a href="https://a2m33.github.io/tanksim/"><img src="assets/cards/tanksim.png" alt="tanksim operator screen with the tank, pump P-101 in fault and the setpoint panel"></a>
+      <a href="https://a2m33.github.io/tanksim/"><img src="assets/cards/tanksim.png" alt="tanksim operator screen: tank T-101 at 74.6 %, pump P-101 in fault with a red lamp, and the setpoint panel"></a>
       <h3><a href="https://github.com/A2M33/tanksim">tanksim</a></h3>
       <sub>PLC-run water tank with alarms, Modbus TCP and an operator HMI. <a href="https://a2m33.github.io/tanksim/">Try it ↗</a></sub>
       <br><br><code>Python</code> <code>Modbus</code>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/A2M33/deskpal"><img src="assets/cards/deskpal.png" alt="deskpal OLED display showing the clock, weather and room climate"></a>
+      <a href="https://github.com/A2M33/deskpal"><img src="assets/cards/deskpal.png" alt="deskpal: the OLED clock screen next to its specs, a 128x64 SSD1306, a DHT22 sensor and 62 % flash use"></a>
       <h3><a href="https://github.com/A2M33/deskpal">deskpal</a></h3>
       <sub>ESP32 desk display with clock, weather, room climate and my GitHub grid.</sub>
       <br><br><code>C++</code> <code>ESP32</code>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/A2M33/sitright"><img src="assets/cards/sitright.png" alt="sitright posture reminder"></a>
+      <a href="https://github.com/A2M33/sitright"><img src="assets/cards/sitright.png" alt="sitright: the four tray icon states and the preview window reporting slouching"></a>
       <h3><a href="https://github.com/A2M33/sitright">sitright</a></h3>
       <sub>Webcam posture, blink and break reminders. Runs offline.</sub>
       <br><br><code>Python</code> <code>MediaPipe</code>
