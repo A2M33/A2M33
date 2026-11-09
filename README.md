@@ -40,9 +40,30 @@ I like code that reaches into the physical world: a PLC program that keeps a wat
 
 <p align="center"><a href="https://github.com/A2M33?tab=repositories">More projects →</a></p>
 
-## What I work with
+## Tech stack
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
-  <img alt="Languages: Python, C, C++, JavaScript, HTML, CSS, Bash, PowerShell. Hardware: ESP32, Arduino, Raspberry Pi, Modbus TCP. Vision and ML: OpenCV, MediaPipe, PyTorch, scikit-learn. Tools: Linux, Git, VS Code, SQLite, Node.js. Spoken: Persian (native), English (fluent), German (learning)." src="assets/stack-light.svg" width="100%">
-</picture>
+<table align="center">
+  <tr>
+    <td align="right"><sub><b>Languages</b></sub></td>
+    <td><picture>
+      <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=python,c,cpp,js,html,css,bash,powershell&theme=light">
+      <img src="https://skillicons.dev/icons?i=python,c,cpp,js,html,css,bash,powershell&theme=dark" height="40" alt="Python, C, C++, JavaScript, HTML, CSS, Bash, PowerShell">
+    </picture></td>
+  </tr>
+  <tr>
+    <td align="right"><sub><b>AI &amp; hardware</b></sub></td>
+    <td><picture>
+      <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=opencv,pytorch,sklearn,arduino,raspberrypi&theme=light">
+      <img src="https://skillicons.dev/icons?i=opencv,pytorch,sklearn,arduino,raspberrypi&theme=dark" height="40" alt="OpenCV, PyTorch, scikit-learn, Arduino, Raspberry Pi">
+    </picture></td>
+  </tr>
+  <tr>
+    <td align="right"><sub><b>Tools</b></sub></td>
+    <td><picture>
+      <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=linux,ubuntu,git,github,vscode,sqlite,nodejs&theme=light">
+      <img src="https://skillicons.dev/icons?i=linux,ubuntu,git,github,vscode,sqlite,nodejs&theme=dark" height="40" alt="Linux, Ubuntu, Git, GitHub, VS Code, SQLite, Node.js">
+    </picture></td>
+  </tr>
+</table>
+
+<p align="center"><sub>Persian (native) · English (fluent) · Deutsch (learning)</sub></p>
