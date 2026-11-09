@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="cards.css">
+<style>
+  .module { position: relative; width: 980px; height: 620px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
+  .hole { position: absolute; width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--trace); }
+  .pins { position: absolute; left: 50%; transform: translateX(-50%); top: 40px; display: flex; gap: 40px; }
+  .pins span { width: 60px; text-align: center; font: 500 20px/1 var(--font-code); color: var(--ink-2); }
+  .pins span::before { content: ""; display: block; width: 22px; height: 22px; margin: 0 auto 12px; border-radius: 50%; border: 2px solid var(--trace); background: var(--ground); }
+  .pins .lit { color: var(--signal-ink); } .pins .lit::before { border-color: var(--signal); }
+  .bezel { position: absolute; left: 50%; top: 140px; transform: translateX(-50%); padding: 22px; background: #060a14; border: 1px solid var(--line); border-radius: 10px; }
+  .glass { width: 754px; height: 401px; overflow: hidden; border-radius: 8px; }
+  .glass img { display: block; width: 795px; height: 442px; margin: -20px; }
+</style></head>
+<body><main class="card"><div class="module">
+  <span class="hole" style="left:24px;top:24px"></span><span class="hole" style="right:24px;top:24px"></span>
+  <span class="hole" style="left:24px;bottom:24px"></span><span class="hole" style="right:24px;bottom:24px"></span>
+  <div class="pins"><span>GND</span><span>VCC</span><span class="lit">SCL</span><span class="lit">SDA</span></div>
+  <div class="bezel"><div class="glass"><img src="src/deskpal-clock.png" alt=""></div></div>
+</div></main></body></html>

@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="cards.css">
+<style>
+  .term { width: 1080px; padding: 0 0 34px; font: 400 21px/1.75 var(--font-code); color: var(--ink); }
+  .term header { display: flex; align-items: center; gap: 14px; padding: 18px 34px; border-bottom: 1px solid var(--line); font: 500 22px/1 var(--font); color: var(--ink-2); margin-bottom: 22px; }
+  .term p { margin: 0 34px; white-space: pre; }
+  .cmd { font-weight: 500; } .ctx { display: block; font: 400 19px/1.6 var(--font); color: var(--ink-2); }
+  .dim { color: var(--ink-2); } .hit { color: var(--signal-ink); } .gap { height: 26px; }
+</style></head>
+<body><main class="card"><section class="term panel-art">
+  <header><span class="pad" data-state="ok"></span>mixinsmith</header>
+  <p class="ctx">NeoForge 1.21.1, Parchment</p>
+  <p class="cmd">$ python mcsrc.py method LivingEntity#hurt</p>
+  <p>public boolean hurt(DamageSource source, float amount)</p>
+  <p class="dim">  mixin target: hurt(Lnet/minecraft/world/...;F)Z</p>
+  <div class="gap"></div>
+  <p class="ctx">Fabric 1.21.1, Yarn</p>
+  <p class="cmd">$ python mcsrc.py method LivingEntity#damage</p>
+  <p>public boolean damage(DamageSource source, float amount)</p>
+  <p class="hit">  mixin target: damage(Lnet/minecraft/entity/...;F)Z</p>
+</section></main></body></html>

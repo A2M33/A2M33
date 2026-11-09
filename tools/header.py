@@ -35,18 +35,26 @@ FONT = {
     " ": ["0", "0", "0", "0", "0"], "o": ["11", "11", "00", "00", "00"],
 }
 
-# A2M33 "control room" palette (notes/design/tokens.css): green-grey panels,
-# amber only for the live lamp. The OLED keeps its real black and blue-white.
+# A2M33 "trace" palette (notes/design/tokens.css): navy board, cyan only for
+# the signal (the power pad). The OLED keeps its real black and blue-white.
 THEMES = {
-    "dark": dict(bg="#1b211e", border="#3d4741", text="#e2e6e0", muted="#9aa59d",
-                 amber="#f0ab2a", board="#242b27", hole="#1b211e", pin="#9aa59d",
+    "dark": dict(bg="#0b1222", border="#22304b", text="#e6edf7", muted="#93a3bd",
+                 signal="#2fcbea", board="#111a2d", hole="#0b1222", pin="#3a4d70",
                  screen="#000000", px="#dbe9ff"),
-    "light": dict(bg="#f4f5f2", border="#b9bfb7", text="#1d2420", muted="#56605a",
-                  amber="#d99211", board="#e3e5e0", hole="#f4f5f2", pin="#56605a",
+    "light": dict(bg="#ffffff", border="#cdd6e4", text="#0c1628", muted="#4a5a73",
+                  signal="#0788ad", board="#f2f5fa", hole="#ffffff", pin="#9fb0c9",
                   screen="#000000", px="#dbe9ff"),
 }
 
-# GitHub shows the header through <img>, which can't fetch fonts, so Barlow
+# The A2M monogram from notes/design/brand/make_mark.py (136x64 grid)
+MARK_PATHS = [
+    "M8 56 L8 16 L16 8 L32 8 L40 16 L40 56", "M8 34 L40 34",
+    "M54 20 L54 16 L62 8 L74 8 L82 16 L82 28 L54 56 L82 56",
+    "M96 56 L96 12 L112 28 L128 12 L128 56",
+]
+MARK_PADS = [(8, 56), (40, 56), (54, 20), (82, 56), (96, 56), (128, 56)]
+
+# GitHub shows the header through <img>, which can't fetch fonts, so Archivo
 # (subset to ASCII, OFL) is embedded as data URIs.
 FONTS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets", "fonts")
 
@@ -102,38 +110,44 @@ def screen_pixels(now, temp):
     return px
 
 
+def mark(T, x, y, k):
+    paths = "".join(f'<path d="{d}"/>' for d in MARK_PATHS)
+    holes = "".join(f'<circle cx="{px}" cy="{py}" r="4.2"/>' for px, py in MARK_PADS)
+    rings = "".join(f'<circle cx="{px}" cy="{py}" r="3.6"/>' for px, py in MARK_PADS)
+    return (f'<defs><mask id="mk" maskUnits="userSpaceOnUse" x="0" y="0" width="136" height="64">'
+            f'<rect width="136" height="64" fill="#fff"/><g fill="#000">{holes}</g></mask></defs>'
+            f'<g transform="translate({x} {y}) scale({k})">'
+            f'<g fill="none" stroke="{T["signal"]}" stroke-width="4" stroke-linejoin="bevel" mask="url(#mk)">{paths}</g>'
+            f'<g fill="none" stroke="{T["signal"]}" stroke-width="2.2">{rings}</g></g>')
+
+
 def svg(t, now, temp):
     T = THEMES[t]
+    ring = f'fill="{T["hole"]}" stroke="{T["pin"]}" stroke-width="1.5"'
     pins = "".join(
-        f'<circle cx="{694 + i * 20}" cy="58" r="4" fill="{T["pin"]}"/>'
-        f'<text x="{694 + i * 20}" y="48" text-anchor="middle">{lab}</text>'
+        f'<circle cx="{688 + i * 25}" cy="58" r="4" {ring}/>'
+        f'<text x="{688 + i * 25}" y="48" text-anchor="middle">{lab}</text>'
         for i, lab in enumerate(["GND", "VCC", "SCL", "SDA"])
     )
-    holes = "".join(
-        f'<circle cx="{x}" cy="{y}" r="5" fill="{T["hole"]}" stroke="{T["border"]}"/>'
-        for x, y in [(612, 52), (836, 52), (612, 196), (836, 196)]
-    )
+    holes = "".join(f'<circle cx="{x}" cy="{y}" r="5" {ring}/>'
+                    for x, y in [(614, 50), (834, 50), (614, 194), (834, 194)])
     label = f"Amin Mohammadi. Python, embedded and automation. Tehran, {temp.replace('o', '°')}, updated {now:%H:%M}."
-    faces = font_face("Barlow", 400, "Barlow-Regular.woff2") + font_face("Barlow Tag", 600, "BarlowSemiCondensed-SemiBold.woff2")
+    faces = font_face("Archivo", 400, "Archivo-400.woff2") + font_face("Archivo", 600, "Archivo-600.woff2")
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" role="img" aria-label="{label}">
-  <style>
-    {faces}
-    .led {{ animation: led 2.4s ease-in-out infinite; }}
-    @keyframes led {{ 0%, 100% {{ opacity: .45; }} 50% {{ opacity: 1; }} }}
-    @media (prefers-reduced-motion: reduce) {{ .led {{ animation: none; }} }}
-  </style>
-  <rect x="0.5" y="0.5" width="899" height="239" rx="6" fill="{T["bg"]}" stroke="{T["border"]}"/>
-  <text x="54" y="112" font-family="'Barlow Tag', Barlow, sans-serif" font-size="52" font-weight="600" fill="{T["text"]}">Amin Mohammadi</text>
-  <g font-family="Barlow, sans-serif">
-    <text x="56" y="146" font-size="20" fill="{T["muted"]}">Python, embedded and automation</text>
-    <circle cx="62" cy="182" r="5" fill="{T["amber"]}"/>
-    <text x="76" y="188" font-size="16" fill="{T["muted"]}">Tehran, Iran. I build tools that touch hardware.</text>
+  <style>{faces}</style>
+  <rect x="0.5" y="0.5" width="899" height="239" rx="8" fill="{T["bg"]}" stroke="{T["border"]}"/>
+  {mark(T, 54, 34, 0.5)}
+  <g font-family="Archivo, sans-serif">
+    <text x="52" y="128" font-size="50" font-weight="600" letter-spacing="-1.6" fill="{T["text"]}">Amin Mohammadi</text>
+    <text x="54" y="162" font-size="20" fill="{T["muted"]}">Python, embedded and automation</text>
+    <circle cx="60" cy="195" r="4.5" fill="{T["signal"]}"/>
+    <text x="74" y="201" font-size="16" fill="{T["muted"]}">Tehran, Iran. I build tools that touch hardware.</text>
   </g>
-  <rect x="600" y="36" width="248" height="172" rx="6" fill="{T["board"]}" stroke="{T["border"]}"/>
+  <rect x="600.5" y="36.5" width="248" height="172" rx="8" fill="{T["board"]}" stroke="{T["border"]}"/>
   {holes}
-  <g font-family="'Barlow Tag', Barlow, sans-serif" font-size="9" fill="{T["muted"]}">{pins}</g>
-  <circle class="led" cx="824" cy="58" r="3.5" fill="{T["amber"]}"/>
-  <text x="812" y="61" font-family="'Barlow Tag', Barlow, sans-serif" font-size="9" fill="{T["muted"]}" text-anchor="end">PWR</text>
+  <g font-family="Archivo, sans-serif" font-size="8.5" font-weight="600" fill="{T["muted"]}">{pins}</g>
+  <circle cx="824" cy="58" r="4" fill="{T["signal"]}"/>
+  <text x="812" y="61" font-family="Archivo, sans-serif" font-size="9" font-weight="600" fill="{T["muted"]}" text-anchor="end">PWR</text>
   <rect x="622" y="70" width="204" height="108" rx="3" fill="{T["screen"]}"/>
   <g fill="{T["px"]}">
     {"".join(screen_pixels(now, temp))}

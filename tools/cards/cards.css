@@ -1,0 +1,5 @@
+/* Profile cards, 1200x750: the real artifact alone on the navy board. Callouts live in each repo's banner. */
+:root { color-scheme: dark; }
+html, body { width: 1200px; height: 750px; overflow: hidden; background: var(--ground); }
+.card { position: relative; width: 1200px; height: 750px; display: grid; place-items: center; }
+.panel-art { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r-panel); overflow: hidden; }

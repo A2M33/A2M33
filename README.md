@@ -4,9 +4,9 @@
 </picture>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/amin-mohammadi-a2m33/"><img src="https://img.shields.io/badge/LinkedIn-242b27?style=flat-square&logo=linkedin&logoColor=e2e6e0" alt="LinkedIn"></a>
-  <a href="mailto:a2m33business@gmail.com"><img src="https://img.shields.io/badge/Email-242b27?style=flat-square&logo=gmail&logoColor=e2e6e0" alt="Email"></a>
-  <a href="https://x.com/A2M33_"><img src="https://img.shields.io/badge/X-242b27?style=flat-square&logo=x&logoColor=e2e6e0" alt="X"></a>
+  <a href="https://www.linkedin.com/in/amin-mohammadi-a2m33/"><img src="https://img.shields.io/badge/LinkedIn-111a2d?style=flat-square&logo=linkedin&logoColor=e6edf7" alt="LinkedIn"></a>
+  <a href="mailto:a2m33business@gmail.com"><img src="https://img.shields.io/badge/Email-111a2d?style=flat-square&logo=gmail&logoColor=e6edf7" alt="Email"></a>
+  <a href="https://x.com/A2M33_"><img src="https://img.shields.io/badge/X-111a2d?style=flat-square&logo=x&logoColor=e6edf7" alt="X"></a>
 </p>
 
 I like code that reaches into the physical world: a PLC program that keeps a water tank from running dry, an ESP32 display on my desk, a webcam that notices you slouching.
@@ -18,19 +18,19 @@ I like code that reaches into the physical world: a PLC program that keeps a wat
 <table>
   <tr>
     <td width="33%" valign="top">
-      <a href="https://a2m33.github.io/tanksim/"><img src="assets/cards/tanksim.png" alt="tanksim operator screen: tank T-101 at 74.6 %, pump P-101 in fault with a red lamp, and the setpoint panel"></a>
+      <a href="https://a2m33.github.io/tanksim/"><img src="assets/cards/tanksim.png" alt="tanksim process drawing: supply cistern, pump P-101 running with a cyan status pad, and tank T-101 at 62.7 % with its alarm levels"></a>
       <h3><a href="https://github.com/A2M33/tanksim">tanksim</a></h3>
       <sub>PLC-run water tank with alarms, Modbus TCP and an operator HMI. <a href="https://a2m33.github.io/tanksim/">Try it ↗</a></sub>
       <br><br><code>Python</code> <code>Modbus</code>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/A2M33/deskpal"><img src="assets/cards/deskpal.png" alt="deskpal: the OLED clock screen next to its specs, a 128x64 SSD1306, a DHT22 sensor and 62 % flash use"></a>
+      <a href="https://github.com/A2M33/deskpal"><img src="assets/cards/deskpal.png" alt="deskpal: the SSD1306 OLED module with its four pins, GND, VCC, SCL and SDA, showing the clock at 14:32"></a>
       <h3><a href="https://github.com/A2M33/deskpal">deskpal</a></h3>
       <sub>ESP32 desk display with clock, weather, room climate and my GitHub grid.</sub>
       <br><br><code>C++</code> <code>ESP32</code>
     </td>
     <td width="33%" valign="top">
-      <a href="https://github.com/A2M33/sitright"><img src="assets/cards/sitright.png" alt="sitright: the four tray icon states and the preview window reporting slouching"></a>
+      <a href="https://github.com/A2M33/sitright"><img src="assets/cards/sitright.png" alt="sitright: the four tray icon states next to the preview window reporting slouching"></a>
       <h3><a href="https://github.com/A2M33/sitright">sitright</a></h3>
       <sub>Webcam posture, blink and break reminders. Runs offline.</sub>
       <br><br><code>Python</code> <code>MediaPipe</code>
@@ -40,21 +40,13 @@ I like code that reaches into the physical world: a PLC program that keeps a wat
 
 <p align="center"><a href="https://github.com/A2M33?tab=repositories">More projects →</a></p>
 
-## Tech stack
+## What I work with
 
-<table align="center">
-  <tr>
-    <td align="right"><sub><b>Languages</b></sub></td>
-    <td><img src="https://skillicons.dev/icons?i=python,c,cpp,js,html,css,bash,powershell" height="40" alt="Python, C, C++, JavaScript, HTML, CSS, Bash, PowerShell"></td>
-  </tr>
-  <tr>
-    <td align="right"><sub><b>AI &amp; hardware</b></sub></td>
-    <td><img src="https://skillicons.dev/icons?i=opencv,pytorch,sklearn,arduino,raspberrypi" height="40" alt="OpenCV, PyTorch, scikit-learn, Arduino, Raspberry Pi"></td>
-  </tr>
-  <tr>
-    <td align="right"><sub><b>Tools</b></sub></td>
-    <td><img src="https://skillicons.dev/icons?i=linux,ubuntu,git,github,vscode,sqlite,nodejs" height="40" alt="Linux, Ubuntu, Git, GitHub, VS Code, SQLite, Node.js"></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| Languages | Python, C, C++, JavaScript, HTML, CSS, Bash, PowerShell |
+| Hardware | ESP32, Arduino, Raspberry Pi, Modbus TCP |
+| Vision and ML | OpenCV, MediaPipe, PyTorch, scikit-learn |
+| Tools | Linux, Git, VS Code, SQLite, Node.js |
 
-<p align="center"><sub>Persian (native) · English (fluent) · Deutsch (learning)</sub></p>
+<sub>Persian (native) · English (fluent) · Deutsch (learning)</sub>
