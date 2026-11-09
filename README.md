@@ -42,11 +42,7 @@ I like code that reaches into the physical world: a PLC program that keeps a wat
 
 ## What I work with
 
-| | |
-| --- | --- |
-| Languages | Python, C, C++, JavaScript, HTML, CSS, Bash, PowerShell |
-| Hardware | ESP32, Arduino, Raspberry Pi, Modbus TCP |
-| Vision and ML | OpenCV, MediaPipe, PyTorch, scikit-learn |
-| Tools | Linux, Git, VS Code, SQLite, Node.js |
-
-<sub>Persian (native) · English (fluent) · Deutsch (learning)</sub>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
+  <img alt="Languages: Python, C, C++, JavaScript, HTML, CSS, Bash, PowerShell. Hardware: ESP32, Arduino, Raspberry Pi, Modbus TCP. Vision and ML: OpenCV, MediaPipe, PyTorch, scikit-learn. Tools: Linux, Git, VS Code, SQLite, Node.js. Spoken: Persian (native), English (fluent), German (learning)." src="assets/stack-light.svg" width="100%">
+</picture>
