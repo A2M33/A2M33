@@ -45,24 +45,15 @@ I like code that reaches into the physical world: a PLC program that keeps a wat
 <table align="center">
   <tr>
     <td align="right"><sub><b>Languages</b></sub></td>
-    <td><picture>
-      <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=python,c,cpp,js,html,css,bash,powershell&theme=light">
-      <img src="https://skillicons.dev/icons?i=python,c,cpp,js,html,css,bash,powershell&theme=dark" height="40" alt="Python, C, C++, JavaScript, HTML, CSS, Bash, PowerShell">
-    </picture></td>
+    <td><img src="https://skillicons.dev/icons?i=python,c,cpp,js,html,css,bash,powershell" height="40" alt="Python, C, C++, JavaScript, HTML, CSS, Bash, PowerShell"></td>
   </tr>
   <tr>
     <td align="right"><sub><b>AI &amp; hardware</b></sub></td>
-    <td><picture>
-      <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=opencv,pytorch,sklearn,arduino,raspberrypi&theme=light">
-      <img src="https://skillicons.dev/icons?i=opencv,pytorch,sklearn,arduino,raspberrypi&theme=dark" height="40" alt="OpenCV, PyTorch, scikit-learn, Arduino, Raspberry Pi">
-    </picture></td>
+    <td><img src="https://skillicons.dev/icons?i=opencv,pytorch,sklearn,arduino,raspberrypi" height="40" alt="OpenCV, PyTorch, scikit-learn, Arduino, Raspberry Pi"></td>
   </tr>
   <tr>
     <td align="right"><sub><b>Tools</b></sub></td>
-    <td><picture>
-      <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=linux,ubuntu,git,github,vscode,sqlite,nodejs&theme=light">
-      <img src="https://skillicons.dev/icons?i=linux,ubuntu,git,github,vscode,sqlite,nodejs&theme=dark" height="40" alt="Linux, Ubuntu, Git, GitHub, VS Code, SQLite, Node.js">
-    </picture></td>
+    <td><img src="https://skillicons.dev/icons?i=linux,ubuntu,git,github,vscode,sqlite,nodejs" height="40" alt="Linux, Ubuntu, Git, GitHub, VS Code, SQLite, Node.js"></td>
   </tr>
 </table>
 
