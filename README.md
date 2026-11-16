@@ -40,7 +40,7 @@ I like code that reaches into the physical world: a PLC program that keeps a wat
 
 <p align="center"><a href="https://github.com/A2M33?tab=repositories">More projects →</a></p>
 
-## Tech stack
+## Tech stacks
 
 <table align="center">
   <tr>
