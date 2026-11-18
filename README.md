@@ -14,7 +14,7 @@ I like code that reaches into the physical world: a PLC program that keeps a wat
 **Goal:** an Ausbildung in Germany as a Fachinformatiker or in Automatisierungstechnik.
 
 ## Projects
- 
+
 <table>
   <tr>
     <td width="33%" valign="top">
