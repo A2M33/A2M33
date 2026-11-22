@@ -4,7 +4,8 @@ I live in Tehran and write Python and some C++. Most of my projects control or m
 
 I want to start an Ausbildung in Germany, as Fachinformatiker or in Automatisierungstechnik.
 
-[Email](mailto:a2m33business@gmail.com) · [X](https://x.com/A2M33_)
+<a href="mailto:a2m33business@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="https://x.com/A2M33_"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
 
 ## Projects
 
