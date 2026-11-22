@@ -34,14 +34,6 @@ I want to start an Ausbildung in Germany, as Fachinformatiker or in Automatisier
   </tr>
 </table>
 
-Smaller things:
-
-- [artikel](https://github.com/A2M33/artikel): practise der, die and das on 909 German nouns, with English and Persian meanings
-- [practicemeter](https://github.com/A2M33/practicemeter): a practice timer for musicians that only counts the minutes you play
-- [spacetrail](https://github.com/A2M33/spacetrail): find out which folders grew on your disk this week
-- [histpick](https://github.com/A2M33/histpick): pick commands from your shell history and save them as a script
-- [mixinsmith](https://github.com/A2M33/mixinsmith): lets coding agents look up the real Minecraft mod API of your project
-
 ## Tech stack
 
 <table align="center">
