@@ -1,44 +1,43 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/A2M33/A2M33/output/header-dark.svg">
-  <img alt="Amin Mohammadi. Python, embedded and automation. Tehran, Iran." src="https://raw.githubusercontent.com/A2M33/A2M33/output/header-light.svg" width="100%">
-</picture>
+# Amin Mohammadi
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/amin-mohammadi-a2m33/"><img src="https://img.shields.io/badge/LinkedIn-111a2d?style=flat-square&logo=linkedin&logoColor=e6edf7" alt="LinkedIn"></a>
-  <a href="mailto:a2m33business@gmail.com"><img src="https://img.shields.io/badge/Email-111a2d?style=flat-square&logo=gmail&logoColor=e6edf7" alt="Email"></a>
-  <a href="https://x.com/A2M33_"><img src="https://img.shields.io/badge/X-111a2d?style=flat-square&logo=x&logoColor=e6edf7" alt="X"></a>
-</p>
+I live in Tehran and write Python and some C++. Most of my projects control or measure something: a PLC program that keeps a water tank between its alarm levels, a heat pump in a simulated house, an ESP32 display on my desk.
 
-I like code that reaches into the physical world: a PLC program that keeps a water tank from running dry, an ESP32 display on my desk, a webcam that notices you slouching.
+I want to start an Ausbildung in Germany, as Fachinformatiker or in Automatisierungstechnik.
 
-**Goal:** an Ausbildung in Germany as a Fachinformatiker or in Automatisierungstechnik.
+[Email](mailto:a2m33business@gmail.com) · [X](https://x.com/A2M33_)
 
 ## Projects
 
 <table>
   <tr>
-    <td width="33%" valign="top">
-      <a href="https://a2m33.github.io/tanksim/"><img src="assets/cards/tanksim.png" alt="tanksim process drawing: supply cistern, pump P-101 running with a cyan status pad, and tank T-101 at 62.7 % with its alarm levels"></a>
-      <h3><a href="https://github.com/A2M33/tanksim">tanksim</a></h3>
-      <sub>PLC-run water tank with alarms, Modbus TCP and an operator HMI. <a href="https://a2m33.github.io/tanksim/">Try it ↗</a></sub>
-      <br><br><code>Python</code> <code>Modbus</code>
+    <td width="50%" valign="top">
+      <a href="https://a2m33.github.io/tanksim/"><img src="assets/shots/tanksim.png" alt="The tanksim HMI in the browser demo: pump P-101 running in manual, tank T-101 at 44.7 % with its alarm levels, and the setpoint panel"></a>
+      <br><a href="https://github.com/A2M33/tanksim"><b>tanksim</b></a>: a water tank and fill pump run by a small PLC program, with alarms, a Modbus TCP server and an operator HMI. <a href="https://a2m33.github.io/tanksim/">Live demo</a>
     </td>
-    <td width="33%" valign="top">
-      <a href="https://github.com/A2M33/deskpal"><img src="assets/cards/deskpal.png" alt="deskpal: the SSD1306 OLED module with its four pins, GND, VCC, SCL and SDA, showing the clock at 14:32"></a>
-      <h3><a href="https://github.com/A2M33/deskpal">deskpal</a></h3>
-      <sub>ESP32 desk display with clock, weather, room climate and my GitHub grid.</sub>
-      <br><br><code>C++</code> <code>ESP32</code>
+    <td width="50%" valign="top">
+      <a href="https://a2m33.github.io/haussim/"><img src="assets/shots/haussim.png" alt="The haussim HMI in German: heat pump WP-101, buffer tank PS-101 and the house, with the heating faceplate and setpoints"></a>
+      <br><a href="https://github.com/A2M33/haussim"><b>haussim</b></a>: a house heated by an air/water heat pump, controlled by a PLC program. The HMI speaks German and English. <a href="https://a2m33.github.io/haussim/">Live demo</a>
     </td>
-    <td width="33%" valign="top">
-      <a href="https://github.com/A2M33/sitright"><img src="assets/cards/sitright.png" alt="sitright: the four tray icon states next to the preview window reporting slouching"></a>
-      <h3><a href="https://github.com/A2M33/sitright">sitright</a></h3>
-      <sub>Webcam posture, blink and break reminders. Runs offline.</sub>
-      <br><br><code>Python</code> <code>MediaPipe</code>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/A2M33/deskpal"><img src="assets/shots/deskpal.png" alt="The deskpal clock screen rendered from the firmware: 14:32 on a 128x64 OLED"></a>
+      <br><a href="https://github.com/A2M33/deskpal"><b>deskpal</b></a>: ESP32 firmware for a small OLED on my desk. It shows the time, the weather, the room climate and my GitHub contributions.
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/A2M33/sitright"><img src="assets/shots/sitright.png" alt="The sitright preview window reading Sitting well, with posture and distance marked Good"></a>
+      <br><a href="https://github.com/A2M33/sitright"><b>sitright</b></a>: a tray app that checks your posture through the webcam and tells you when to sit up or take a break. It runs offline.
     </td>
   </tr>
 </table>
 
-<p align="center"><a href="https://github.com/A2M33?tab=repositories">More projects →</a></p>
+Smaller things:
+
+- [artikel](https://github.com/A2M33/artikel): practise der, die and das on 909 German nouns, with English and Persian meanings
+- [practicemeter](https://github.com/A2M33/practicemeter): a practice timer for musicians that only counts the minutes you play
+- [spacetrail](https://github.com/A2M33/spacetrail): find out which folders grew on your disk this week
+- [histpick](https://github.com/A2M33/histpick): pick commands from your shell history and save them as a script
+- [mixinsmith](https://github.com/A2M33/mixinsmith): lets coding agents look up the real Minecraft mod API of your project
 
 ## Tech stack
 
@@ -57,4 +56,4 @@ I like code that reaches into the physical world: a PLC program that keeps a wat
   </tr>
 </table>
 
-<p align="center"><sub>Persian (native) · English (fluent) · Deutsch (learning)</sub></p>
+Persian is my first language. I speak English and I'm learning German.
