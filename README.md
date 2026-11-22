@@ -10,23 +10,25 @@ I want to start an Ausbildung in Germany, as Fachinformatiker or in Automatisier
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <a href="https://a2m33.github.io/tanksim/"><img src="assets/shots/tanksim.png" alt="The tanksim HMI in the browser demo: pump P-101 running in manual, tank T-101 at 44.7 % with its alarm levels, and the setpoint panel"></a>
-      <br><a href="https://github.com/A2M33/tanksim"><b>tanksim</b></a>: a water tank and fill pump run by a small PLC program, with alarms, a Modbus TCP server and an operator HMI. <a href="https://a2m33.github.io/tanksim/">Live demo</a>
+    <td width="25%" valign="top" align="center">
+      <a href="https://a2m33.github.io/tanksim/"><img src="assets/shots/tanksim.png" width="220" alt="The tanksim HMI in the browser demo: pump P-101 running in manual, tank T-101 at 44.7 % with its alarm levels, and the setpoint panel"></a>
+      <br><a href="https://github.com/A2M33/tanksim"><b>tanksim</b></a>
+      <br><sub>Water tank and pump run by a PLC program, with Modbus TCP. <a href="https://a2m33.github.io/tanksim/">Demo</a></sub>
     </td>
-    <td width="50%" valign="top">
-      <a href="https://a2m33.github.io/haussim/"><img src="assets/shots/haussim.png" alt="The haussim HMI in German: heat pump WP-101, buffer tank PS-101 and the house, with the heating faceplate and setpoints"></a>
-      <br><a href="https://github.com/A2M33/haussim"><b>haussim</b></a>: a house heated by an air/water heat pump, controlled by a PLC program. The HMI speaks German and English. <a href="https://a2m33.github.io/haussim/">Live demo</a>
+    <td width="25%" valign="top" align="center">
+      <a href="https://a2m33.github.io/haussim/"><img src="assets/shots/haussim.png" width="220" alt="The haussim HMI in German: heat pump WP-101, buffer tank PS-101 and the house, with the heating faceplate and setpoints"></a>
+      <br><a href="https://github.com/A2M33/haussim"><b>haussim</b></a>
+      <br><sub>A house with a heat pump and a PLC program. HMI in German and English. <a href="https://a2m33.github.io/haussim/">Demo</a></sub>
     </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/A2M33/deskpal"><img src="assets/shots/deskpal.png" alt="The deskpal clock screen rendered from the firmware: 14:32 on a 128x64 OLED"></a>
-      <br><a href="https://github.com/A2M33/deskpal"><b>deskpal</b></a>: ESP32 firmware for a small OLED on my desk. It shows the time, the weather, the room climate and my GitHub contributions.
+    <td width="25%" valign="top" align="center">
+      <a href="https://github.com/A2M33/deskpal"><img src="assets/shots/deskpal.png" width="220" alt="The deskpal clock screen rendered from the firmware: 14:32 on a 128x64 OLED"></a>
+      <br><a href="https://github.com/A2M33/deskpal"><b>deskpal</b></a>
+      <br><sub>ESP32 OLED on my desk: time, weather, room climate, GitHub grid.</sub>
     </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/A2M33/sitright"><img src="assets/shots/sitright.png" alt="The sitright preview window reading Sitting well, with posture and distance marked Good"></a>
-      <br><a href="https://github.com/A2M33/sitright"><b>sitright</b></a>: a tray app that checks your posture through the webcam and tells you when to sit up or take a break. It runs offline.
+    <td width="25%" valign="top" align="center">
+      <a href="https://github.com/A2M33/sitright"><img src="assets/shots/sitright.png" width="220" alt="The sitright preview window reading Sitting well, with posture and distance marked Good"></a>
+      <br><a href="https://github.com/A2M33/sitright"><b>sitright</b></a>
+      <br><sub>Webcam posture and break reminders in the tray. Runs offline.</sub>
     </td>
   </tr>
 </table>
